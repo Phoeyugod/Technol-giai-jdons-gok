@@ -7,3 +7,10 @@ body{
     background: linear-gradient( #512222, #0F498C)
 
 }
+
+.ikon{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
