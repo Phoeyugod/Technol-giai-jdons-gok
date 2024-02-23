@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technol-giai-jdons-gok</title>
     <link rel="stylesheet" href="Technologiai_Ujdonsagok.css">
+    <link rel="stylesheet" href="Technologiai_Ujdonsagok.js">
+    
 </head>
 <body>
     <nav>
-        <h1>Techwave</h1>
-        <img id="logo" src=".vscode/Kepek/logo.png" alt="" style="width:22px;height:11px;">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>Techwave</h1>
+                <img id="logo" src=".vscode/Kepek/logo.png" alt="" style="width:88px;height:44px;">
         
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="col-sm-8"></div>
+          </div>
+          <div class="row">
+            <div class="col-*-*"></div>
+            <div class="col-*-*"></div>
+            <div class="col-*-*"></div>
+          </div>
     </nav>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+    </script>
+
 </body>
 </html>
