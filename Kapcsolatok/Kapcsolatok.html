@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Kapcsolatok.css">
+    <title>Kapcsolatok</title>
+</head>
+<body>
+    <nav>
+        <h1 style="padding: auto;">Techwave</h1>
+        <img id="logo" src=".vscode/Kepek/logo.png" alt="" style="width:88px;height:44px;">
+    </nav>
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <img src=".vscode/Kepek/robot_kep1.png" alt="Feliratkozás" style="width:880px;height:440px;">
+            </div>
+
+            <div class="container">
+                <label for="E-mail"><b>E-mail cím</b></label>
+                <input type="text" placeholder="E-mail" name="E-mail" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input id="emlekez" type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+</body>
+</html>
