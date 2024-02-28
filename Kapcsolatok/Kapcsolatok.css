@@ -27,8 +27,8 @@ body{
   background: linear-gradient( #0F498C, #512222);
   margin: 5px auto; /* 15% from the top and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  height: 80%;
+  width: 70%; /* Could be more or less, depending on screen size */
+  height: 60%;
 }
 
 /* The Close Button */
@@ -65,10 +65,6 @@ body{
   to {transform: scale(1)}
 }
 
-#emlekez {
-    color: white;
-}
-
 #logo {
     position: absolute;
     left: 0px;
@@ -78,4 +74,8 @@ body{
 
 h1{
   color: white;
+}
+
+#emlekez{
+
 }
