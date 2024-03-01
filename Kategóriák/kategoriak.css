@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 html{
-    height: 200%;
+    height: 100%;
 }
 
 body{
 
-        background-image: url(hatter.jpg);
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
+     background: linear-gradient( #0F498C, #512222)
+     
+
+        
 
 }
 
 nav{
-    background-color: #0f498c;
+    background: linear-gradient( #512222,#0F498C)
 }
 
 #brandnev{
@@ -22,15 +22,9 @@ nav{
 }
 
 nav img{
-    width: 30px;
+    width: 120px;
 }
 
-.banner{
-    background-image: url(../képek/kategoriak/hatter.jpg);
-    background-position: center center;
-    background-position-y: -10rem;
-    height: 470px;
-}
 
 h1{
     font-family: 'Fredericka the Great', cursive;
@@ -113,4 +107,23 @@ h1{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Vízszintes középre igazítás */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kave img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Képek középre igazítása */
 }
