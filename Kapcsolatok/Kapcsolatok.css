@@ -1,3 +1,13 @@
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  background: linear-gradient( #0F498C, #512222)
+
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -17,8 +27,8 @@
   background: linear-gradient( #0F498C, #512222);
   margin: 5px auto; /* 15% from the top and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  height: 80%;
+  width: 70%; /* Could be more or less, depending on screen size */
+  height: 60%;
 }
 
 /* The Close Button */
@@ -55,13 +65,17 @@
   to {transform: scale(1)}
 }
 
-#emlekez {
-    color: white;
-}
-
 #logo {
     position: absolute;
     left: 0px;
     top: 0px;
     z-index: -10;
+}
+
+h1{
+  color: white;
+}
+
+#emlekez{
+
 }
