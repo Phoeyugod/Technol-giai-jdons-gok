@@ -25,21 +25,6 @@ nav img{
     width: 120px;
 }
 
-
-h1{
-    font-family: 'Fredericka the Great', cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 49px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: #512222;
-    width: 100%;
-}
-
 .tech{
     box-sizing: border-box;
     background: #FFFFFF;
@@ -71,9 +56,10 @@ h1{
     align-items: center;
     text-align: center;
     font-variant: small-caps;
-    color: #000000;
+    color: #FFFFFF;
     height: 50px;
     justify-content: center;
+    
 }
 
 
@@ -121,16 +107,17 @@ h1{
     align-items: center;
 }
 .kave img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
     display: block;
     margin: 0 auto; /* Képek középre igazítása */
+    width: 500px; /* Például itt 200 pixel szélesre állítjuk a képeket */
+    height: 300px; /* Ugyanezen magasra */
 }
 
 #logo{
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: -10px;
+    top: -7px;
     z-index: -10;
+    width: 145px;
+    height: 71px;
 }
