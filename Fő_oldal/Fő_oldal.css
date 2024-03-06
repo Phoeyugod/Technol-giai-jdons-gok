@@ -8,11 +8,11 @@ body{
 
 }
 
-#logo {
+.element1{
     position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -10;
+    top: 0.1cm;
+    left: 0;
+    z-index: -1;
 }
 
 h1 {
