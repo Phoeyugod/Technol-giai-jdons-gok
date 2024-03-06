@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 html{
   height: 100%;
 }
@@ -76,6 +78,102 @@ h1{
   color: white;
 }
 
-#emlekez{
+nav{
+  background: linear-gradient( #512222,#0F498C)
+}
 
+#brandnev{
+  font-size: 1.5em;
+}
+
+nav img{
+  width: 120px;
+}
+
+.tech{
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #512222;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  padding: 0px;
+}
+
+.kave:hover{
+  filter: drop-shadow(0px 0px 5px #521111);
+}
+
+.img-fluid{
+  height: 260px;
+  width: 433px;
+  left: 0px;
+  right: 0px;
+  padding: 0px;
+}
+
+.kave h2{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-variant: small-caps;
+  color: #FFFFFF;
+  height: 50px;
+  justify-content: center;
+  
+}
+
+
+#Modalgomb{
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: #7A5757;
+  border-radius: 4px;
+  stroke: #7A5757;
+  color: #FFFFFF;
+  border: none;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+#modalbg{
+  background-color: #F1DCBD;
+}
+
+#input{
+  display: flex;
+  padding: 5px;
+  border-radius: 4px 4px 4px 4px;
+  border-color: #512222;
+  margin-bottom: 7px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Vízszintes középre igazítás */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kave img {
+  display: block;
+  margin: 0 auto; /* Képek középre igazítása */
+  width: 500px; /* Például itt 200 pixel szélesre állítjuk a képeket */
+  height: 300px; /* Ugyanezen magasra */
 }
