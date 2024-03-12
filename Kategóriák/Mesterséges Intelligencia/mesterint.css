@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 html {
     height: 100%;
@@ -121,7 +120,6 @@ nav img {
 
 h1 {
     color: white;
-    background-color: #512222;
     padding: 10px;
     font-family: Arial, sans-serif;
 }
@@ -131,4 +129,5 @@ p {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    color: white;
 }
