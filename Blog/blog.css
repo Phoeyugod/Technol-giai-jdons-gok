@@ -22,23 +22,8 @@ html, body {
 
 
 body {
-    background-image: url('hatter.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
 }
-
-h1{
-color: white;
-width: 120px;
-}
-
-#logo {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -10; 
-width: 120px;
-}
-    
