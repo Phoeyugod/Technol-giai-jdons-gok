@@ -2,7 +2,6 @@
 html {
     height: 100%;
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -10,11 +9,31 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(#0F498C, #512222);
+    margin: 0; /* Mielőtt az oldal tetejére helyezzük a címet, a margin-t a body-ról töröljük. */
+    padding: 0; /* Ezenkívül a padding-t is töröljük. */
 }
+
+h1 {
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0; /* Töröljük a felesleges margint */
+    position: absolute; /* Abszolút pozíciózás */
+    top: 0; /* A felső szélre helyezzük */
+    transform: translateX(-50%); /* A középre pozícionáláshoz */
+    width: 100%; /* A szélesség teljes sávot fog elfoglalni */
+}
+
 
 nav {
     background: linear-gradient(#512222, #0F498C);
+    width: 100%; /* A navigációs sáv teljes szélességű lesz. */
+    padding: 10px 0; /* A navigációs sáv felső és alsó töltése 10px. */
+    box-sizing: border-box; /* A padding hozzáadódik a szélességhez és a magassághoz. */
+    text-align: center; /* A navigációs elemek középre igazítása a vízszintes tengelyen. */
 }
+
 
 #brandnev {
     font-size: 1.5em;
@@ -118,11 +137,7 @@ nav img {
     height: 300px;
 }
 
-h1 {
-    color: white;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-}
+
 
 p {
     text-align: center;
