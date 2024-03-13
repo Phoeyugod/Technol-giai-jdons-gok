@@ -14,15 +14,12 @@ body {
 }
 
 h1 {
-    color: white;
+    color:white;
     padding: 10px;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0; /* Töröljük a felesleges margint */
-    position: absolute; /* Abszolút pozíciózás */
-    top: 0; /* A felső szélre helyezzük */
-    transform: translateX(-50%); /* A középre pozícionáláshoz */
     width: 100%; /* A szélesség teljes sávot fog elfoglalni */
+    margin-top: 100px;
 }
 
 
