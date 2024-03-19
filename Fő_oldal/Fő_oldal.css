@@ -279,4 +279,13 @@ hr {
   height: 5px;
   background-color: white;
   margin: 6px 0;
+  text-align:right;
+  
+}
+
+#foszoveg{
+  background-color: black;
+  width: 70%;
+  height: 60%;
+  
 }
