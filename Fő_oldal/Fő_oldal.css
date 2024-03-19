@@ -189,18 +189,10 @@ nav img{
   background: #f1f1f1;
 }
 
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
 /* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
+#button {
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -214,7 +206,6 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -238,21 +229,18 @@ button:hover {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
   padding-top: 50px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background: linear-gradient( #0F498C, #512222);
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
 hr {
-  border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
 
@@ -286,28 +274,9 @@ hr {
   }
 }
 
-.container2 {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
+#cubes {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: white;
   margin: 6px 0;
-  transition: 0.4s;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
-}
-
-/* Fade out the second bar */
-.change .bar2 {opacity: 0;}
-
-/* Rotate last bar */
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
 }
