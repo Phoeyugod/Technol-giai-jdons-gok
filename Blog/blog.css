@@ -41,3 +41,9 @@ width: 120px;
     z-index: -10;
 width: 120px;
 }
+
+#lefele{
+
+    position: absolute;
+    top: 20%;
+}
