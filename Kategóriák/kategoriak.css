@@ -382,3 +382,13 @@ div{
     top: 20%;
     left: 5%;
 }
+
+p{
+  text-align: center;
+}
+
+#fel{
+  position: absolute;
+  top: 92%;
+  right: 1%;
+}
