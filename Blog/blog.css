@@ -5,8 +5,8 @@ html, body {
     width: 100%;
     overflow: hidden; /* Optional: hides any scrollbars */
 }
-
-
+ 
+ 
  
     .background::before {
       content: '';
@@ -16,11 +16,11 @@ html, body {
       left: 0;
       width: 100%;
       height: 100%;
-
+ 
     }
-
-
-
+ 
+ 
+ 
 body {
     background: linear-gradient(#0F498C, #512222);
     background-size: cover;
@@ -28,17 +28,22 @@ body {
     background-repeat: no-repeat;
     text-align: center;
 }
-
+ 
 h1{
 color: white;
 width: 120px;
 }
-
+ 
 #logo {
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: -10; 
+    z-index: -10;
 width: 120px;
 }
-    
+
+#lefele{
+
+    position: absolute;
+    top: 20%;
+}
