@@ -229,40 +229,10 @@ button:hover {
   padding: 16px;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background: linear-gradient( #0F498C, #512222);
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
 /* Style the horizontal ruler */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
 }
 
 .close:hover,
@@ -318,8 +288,12 @@ h3{
 .centered-and-rounded {
   position: absolute;
   bottom: 30%;
-  left: 50%;
+  left: 150%;
   transform: translate(-50%, -50%);
-  border-radius: 25px;
-  width: 30%;
+  border-radius: 150%;
+  width: 100%;
+}
+
+.center{
+  text-align: center;
 }
