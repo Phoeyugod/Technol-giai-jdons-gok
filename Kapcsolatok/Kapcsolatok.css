@@ -14,13 +14,13 @@ body{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
+  left: 37.5%;
   top: 0;
-  width: 100%; /* Full width */
+  width: 25%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
   padding-top: 200px;
 }
 
@@ -43,18 +43,41 @@ body{
   font-size: 35px;
   font-weight: bold;
 }
-
-/* Close button on hover */
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+@media screen and (max-width: 600px) {
+  #logo {
+  position: absolute;
+  height: auto;
+  width: 8%;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  }
+  .Phone{
+  display: block;
+  }
+  .PC{
+  display: none;
+  }
+}
+
+.navok{
+  background: linear-gradient( #512222,#0F498C);
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  background: linear-gradient( #0F498C, #512222)
+
 }
 
 @-webkit-keyframes animatezoom {
@@ -67,11 +90,17 @@ body{
   to {transform: scale(1)}
 }
 
+.PC{
+  display: block;
+}
+
+.Phone{
+  display: none;
+}
+
 #logo {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -10;
+  width: 125px;  /* Változtasd meg a szélességet a kívánt méretre */
+  height: 50px;  /* Változtasd meg a magasságot a kívánt méretre */
 }
 
 h1{
@@ -85,10 +114,6 @@ nav{
 
 #brandnev{
   font-size: 1.5em;
-}
-
-nav img{
-  width: 120px;
 }
 
 .tech{
@@ -128,43 +153,43 @@ nav img{
   
 }
 
-
-#Modalgomb{
-  align-items: center;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  background: #7A5757;
-  border-radius: 4px;
-  stroke: #7A5757;
-  color: #FFFFFF;
-  border: none;
-  width: 10rem;
-  margin-left: auto;
-  margin-right: auto ;
-}
-
-#modalbg{
-  background-color: #F1DCBD;
-}
-
-#input{
-  display: flex;
-  padding: 5px;
-  border-radius: 4px 4px 4px 4px;
-  border-color: #512222;
-  margin-bottom: 7px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Vízszintes középre igazítás */
+  width: 300px;
+  padding: 16px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
 }
 
 .row {
@@ -198,7 +223,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #1772DC;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -212,12 +237,6 @@ button:hover {
   opacity:1;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
   float: left;
@@ -229,67 +248,11 @@ button:hover {
   padding: 16px;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
   .cancelbtn, .signupbtn {
     width: 100%;
   }
-}
-
-h4,h5,h2,h1{
-  text-align: center;
-  color: white;
 }
 
 .center-and-left{
@@ -308,9 +271,8 @@ h4,h5,h2,h1{
   height: 30%;
 }
 
-h3{
+h3,h2{
   color: white;
-  padding-bottom: 25%;
 }
 
 #le{
@@ -322,6 +284,32 @@ h3{
   bottom: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 25px;
-  width: 30%;
+  border-radius: 50%;
+  height: 7.5%;
+  width: 20%;
+  font-size: 175%;
+
+}
+
+div{
+  color: white;
+}
+
+#elorebb{
+  z-index: 1;
+}
+
+#robot{
+  z-index: 0;
+  position: fixed;
+  height: auto;
+  width: 15.7%;
+  left: 42%;
+}
+
+#lejjebb{
+  position: absolute;
+  left: 2.5%;
+  width: 95%;
+  bottom: 10%;
 }

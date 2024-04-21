@@ -380,7 +380,10 @@ div{
   color: #FFFFFF;
 }
 
-#Icon{
-  left: 100%;
-  top: 100%;
+.rounded-rectangle {
+  border: 2px solid black;  /* Téglalap kerete */
+  border-radius: 25px;  /* Lekerekített sarkok */
+  padding: 20px;  /* Szöveg és keret közötti tér */
+  width: 200px;  /* Téglalap szélessége */
+  text-align: center;  /* Szöveg középre igazítása */
 }
