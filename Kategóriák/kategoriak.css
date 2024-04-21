@@ -7,7 +7,6 @@ html{
 body{
   margin: 0;
   background: linear-gradient( #0F498C, #512222)
-
 }
 
 /* The Close Button */
@@ -122,12 +121,6 @@ nav img{
   justify-content: center;
   align-items: center;
 }
-.kave img {
-  display: block;
-  margin: 0 auto; /* Képek középre igazítása */
-  width: 500px; /* Például itt 200 pixel szélesre állítjuk a képeket */
-  height: 300px; /* Ugyanezen magasra */
-}
 
 /* Set a style for all buttons */
 #button {
@@ -177,11 +170,6 @@ button:hover {
   background: linear-gradient( #0F498C, #512222);
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  margin-bottom: 25px;
 }
 
 /* The Close Button (x) */
@@ -250,17 +238,6 @@ hr {
   right: 46%;
 }
 
-#jumpbotron{
-  font-size: 1.5em;
-  color: white;
-  position: absolute;
-  z-index: 2;
-}
-
-.bg-Techwave{
-  background: linear-gradient( #0A3CBD #1772DC);
-}
-
 .centered {
   position: absolute;
   top: 5%;
@@ -279,14 +256,6 @@ hr {
   bottom: -85%;
   width: 45%;
   height: 170%;
-}
-
-#Udvuzlo_szoveg{
-  position: absolute;
-  top: 55px;
-  left: 5%;
-  font-size: 74%;
-  
 }
 
 #logo2{
@@ -346,4 +315,20 @@ p{
   width: 20%;
   top: 0.75%;
   left: 0%;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container img {
+  flex: 1 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+h2{
+  position: relative;
+  left: 30%;
 }

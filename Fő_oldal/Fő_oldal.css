@@ -1,94 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+  position: absolute;
+  height: auto;
+  width: 8%;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  }
+  .Phone{
+  display: block;
+  }
+  .PC{
+  display: none;
+  }
+}
+
+.navok{
+  background: linear-gradient( #512222,#0F498C);
+}
+
 html{
   height: 100%;
 }
 
 body{
+  font-size: 18px;
   margin: 0;
   background: linear-gradient( #0F498C, #512222)
-
 }
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background: linear-gradient( #0F498C, #512222); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 200px;
+.PC{
+  display: block;
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background: linear-gradient( #0F498C, #512222);
-  margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 70%; /* Could be more or less, depending on screen size */
-  height: 60%;
-}
-
-/* The Close Button */
-.close {
-  /* Position it in the top right corner outside of the modal */
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-/* Close button on hover */
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
+.Phone{
+  display: none;
 }
 
 #logo {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -10;
+  width: 125px;  /* Változtasd meg a szélességet a kívánt méretre */
+  height: 50px;  /* Változtasd meg a magasságot a kívánt méretre */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;  /* A tételek középre igazítása függőlegesen */
 }
 
 h1{
   color: white;
 }
 
-nav{
-  background: linear-gradient( #512222,#0F498C)
-}
-
 #brandnev{
   font-size: 1.5em;
   color: white;
-}
-
-nav img{
-  width: 120px;
 }
 
 .tech{
@@ -128,22 +101,6 @@ nav img{
   
 }
 
-
-#Modalgomb{
-  align-items: center;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  background: #7A5757;
-  border-radius: 4px;
-  stroke: #7A5757;
-  color: #FFFFFF;
-  border: none;
-  width: 10rem;
-  margin-left: auto;
-  margin-right: auto ;
-}
-
 #modalbg{
   background: linear-gradient(#0A3CBD#1772DC);
 }
@@ -167,11 +124,6 @@ nav img{
   height: 100vh; /* Vízszintes középre igazítás */
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .kave img {
   display: block;
   margin: 0 auto; /* Képek középre igazítása */
@@ -198,70 +150,14 @@ button:hover {
   padding: 14px 20px;
 }
 
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
 /* Add padding to container elements */
 .container {
   padding: 16px;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background: linear-gradient( #0F498C, #512222);
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
 /* Style the horizontal ruler */
 hr {
   margin-bottom: 25px;
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
 }
 
 #cubes {
@@ -280,10 +176,6 @@ hr {
   position: absolute;
 }
 
-#demo{
-  background: linear-gradient(#0A3CBD#1772DC);
-}
-
 .centered-and-rounded {
   position: absolute;
   top: 35%;
@@ -293,73 +185,24 @@ hr {
 }
 
 #logo1{
-  position: fixed;
-  z-index: 1;
-  width: 20%;
-  top: 2%;
-  right: 46%;
-}
-
-#jumpbotron{
-  font-size: 1.5em;
-  color: white;
-  position: absolute;
-  z-index: 2;
-}
-
-p{
-  color: white;
-  position: fixed;
-  top: 70px;
-  left: 5%;
-  font-size: 115%;
+  position: relative;
+  width: 150px;
 }
 
 .bg-Techwave{
   background: linear-gradient( #0A3CBD #1772DC);
 }
 
-.centered {
-  position: absolute;
-  top: 5%;
-  left: 42%;
-}
-
 .bottom{
-  position: fixed;
-  bottom: -166%;
-  left: -75%;
+  margin-left: 0%;
+  margin-top: -19%;
 }
 
 .center-and-left{
-  position: fixed;
-  left: 130%;
-  bottom: -85%;
-  width: 45%;
-  height: 170%;
-}
-
-#Udvuzlo_szoveg{
-  position: absolute;
-  top: 55px;
-  left: 5%;
-  font-size: 74%;
-  
-}
-
-#logo2{
-  position: fixed;
-  z-index: 1;
-  width: 35%;
-  top: 5%;
-  right: 40%;
-}
-
-#jumpbotron1{
-  font-size: 1em;
-  color: white;
-  position: absolute;
-  z-index: 2;
+  margin-top: -16%;
+  margin-left: 80%;
+  width: 20%;
+  height: 115%;
 }
 
 .centered1 {
@@ -368,22 +211,76 @@ p{
   left: 39.5%;
 }
 
-#logo4{
-  position: fixed;
-  z-index: -1;
-  width: 20%;
-  top: 0.75%;
-  left: 0%;
-}
-
 div{
   color: #FFFFFF;
 }
 
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background: linear-gradient( #0F498C,#1772DC); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.menu_gomb{
+  position: fixed;
+  right: 0%;
+}
+
 .rounded-rectangle {
-  border: 2px solid black;  /* Téglalap kerete */
+  margin-top: 120px;
+  margin-left: 36%;
+  border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 25px;  /* Lekerekített sarkok */
   padding: 20px;  /* Szöveg és keret közötti tér */
-  width: 200px;  /* Téglalap szélessége */
+  width: 450px;  /* Téglalap szélessége */
   text-align: center;  /* Szöveg középre igazítása */
+}
+
+.rounded-rectangle2 {
+  margin-top: 10px;
+  margin-left: 34.5%;
+  border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 25px;  /* Lekerekített sarkok */
+  padding: 10px;  /* Szöveg és keret közötti tér */
+  width: 500px;  /* Téglalap szélessége */
 }
