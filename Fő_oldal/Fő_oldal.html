@@ -3,53 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="../Fő_oldal/képek/logo.png">
     <title>Technol-giai-jdons-gok</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="Fő_oldal.css">
+    <link rel="stylesheet" type="text/css" href="Fő_oldal.css">
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <nav class="PC navbar navbar-expand-lg navbar-dark fixed-top navok">
+        <div class="PC">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top navok">
+            <div class="collapse navbar-collapse" id="navbarMenu">
                 <div class="collapse navbar-collapse" id="navbarMenu">
-                    <div class="collapse navbar-collapse" id="navbarMenu">
-                        <div class="navbar-nav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="navbar-brand" id="brandnev" href="../Fő_oldal/Fő_oldal.html"><img  id="logo" src="../Fő_oldal/képek/logo.png" alt="TechWave logo"></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../Kategóriák/kategoriak.html">Kategoriák</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../Blog/blog.html">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../Kapcsolatok/Kapcsolatok.html">Kapcsolatok</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>               
-            </nav>
-            <nav class="Phone menu">
-                <div id="mySidenav" class="sidenav">
-                    <a class="navbar-brand" id="brandnev iconTW" href="../Fő_oldal/Fő_oldal.html"><img id="logo4" src="../Fő_oldal/képek/logo.png" alt="TechWave logo"></a>
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><div id="cubes"></div><div id="cubes"></div><div id="cubes"></div></a>
-                    <div class="offcanvas-body">
-                        <button href="" style="height: 100px;width: 375px;" type="button" class="btn"><a href="" class="nav-link active">Főoldal</a></button>
-                        <hr>
-                        <button href="" style="height: 100px;width: 375px;" type="button" class="btn"><a href="../Kategóriák/kategoriak.html" class="nav-link">Kategoriák</a></button>
-                        <hr>
-                        <button style="height: 100px;width: 375px;" type="button" class="btn"><a  href="../Blog/blog.html" class="nav-link">Blog</a></button>
-                        <hr>
-                        <button style="height: 100px;width: 375px;" href="" type="button" class="btn"><a href="../Kapcsolatok/Kapcsolatok.html" class="nav-link">Kapcsolatok</a></button> 
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="navbar-brand" id="brandnev" href="../Fő_oldal/Fő_oldal.html"><img  id="logo" src="../Fő_oldal/képek/logo.png" alt="TechWave logo"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Kategóriák/kategoriak.html">Kategoriák</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Blog/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Kapcsolatok/Kapcsolatok.html">Kapcsolatok</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+            </nav>
+        </div>
+        <div class="Phone">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top navok">
+                <img id="logo" src="../Fő_oldal/képek/logo.png" alt="TechWave logo">
+                <div id="mySidenav" class="sidenav">
+                    <div class="offcanvas-body">
+                        <button href="" style="height: 100px;width: 375px;" type="button" class="menu_a btn"><a href="" class="nav-link active">Főoldal</a></button>
+                        <hr>
+                        <button href="" style="height: 100px;width: 375px;" type="button" class="menu_a btn"><a href="../Kategóriák/kategoriak.html" class="nav-link">Kategoriák</a></button>
+                        <hr>
+                        <button style="height: 100px;width: 375px;" type="button" class="menu_a btn"><a  href="../Blog/blog.html" class="nav-link">Blog</a></button>
+                        <hr>
+                        <button style="height: 100px;width: 375px;" href="" type="button" class="menu_a btn"><a href="../Kapcsolatok/Kapcsolatok.html" class="nav-link">Kapcsolatok</a></button> 
+                    </div>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><div id="cubes"></div><div id="cubes"></div><div id="cubes"></div></a>
+                </div>
                 <!-- Use any element to open the sidenav -->
-                <a onclick="openNav()"><div id="cubes"></div><div id="cubes"></div><div id="cubes"></div></a>
+                <a onclick="openNav()" class="" ><div id="cubes"></div><div id="cubes"></div><div id="cubes"></div></a>
             </nav>
         </div>
     </header>
@@ -62,12 +64,14 @@
         <img src="../Fő_oldal/képek/Fő_oldal/setup.png" alt="setup" class="bottom">
     <!-- Interaktív kvíz -->
     <div class="rounded-rectangle2">
-        <h2>Tech Kvíz</h2>
+        <h2>Napi Tech Kvíz (Csináld meg ha értesz hozzá!)</h2>
         <hr>
         <p id="question"></p>
         <hr>
         <div id="options"></div>
         <button onclick="checkAnswer()">Ellenőrizd a válaszod</button>
+        <hr>
+        <p id="result"></p>
     </div>
     </article>
     <script src="Fo_oldal.js"></script>

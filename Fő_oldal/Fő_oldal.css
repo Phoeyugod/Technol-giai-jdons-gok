@@ -1,28 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-@media screen and (max-width: 600px) {
-  #logo {
-  position: absolute;
-  height: auto;
-  width: 8%;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-  }
-  .Phone{
-  display: block;
-  }
-  .PC{
-  display: none;
-  }
-}
-
 .navok{
   background: linear-gradient( #512222,#0F498C);
 }
@@ -169,13 +145,6 @@ hr {
   
 }
 
-#foszoveg{
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 40%;
-  height: 30%;
-  position: absolute;
-}
-
 .centered-and-rounded {
   position: absolute;
   top: 35%;
@@ -189,16 +158,16 @@ hr {
   width: 150px;
 }
 
-.bg-Techwave{
-  background: linear-gradient( #0A3CBD #1772DC);
-}
-
 .bottom{
+  display: block;
   margin-left: 0%;
   margin-top: -19%;
+  width: 29.5%;
+  height: 29.5%;
 }
 
 .center-and-left{
+  display: block;
   margin-top: -16%;
   margin-left: 80%;
   width: 20%;
@@ -223,7 +192,7 @@ div{
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-  background: linear-gradient( #0F498C,#1772DC); /* Black*/
+  background: linear-gradient( #512222,#0F498C 7.5%,#1772DC); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -247,6 +216,7 @@ div{
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
+  z-index: -1;
   top: 0;
   right: 25px;
   font-size: 36px;
@@ -276,11 +246,64 @@ div{
 }
 
 .rounded-rectangle2 {
-  margin-top: 10px;
+  margin-top: -415px;
   margin-left: 34.5%;
   border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
   background-color: rgba(0, 0, 0, 1);
   border-radius: 25px;  /* Lekerekített sarkok */
   padding: 10px;  /* Szöveg és keret közötti tér */
   width: 500px;  /* Téglalap szélessége */
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 125px;  /* Változtasd meg a szélességet a kívánt méretre */
+    height: 50px;  /* Változtasd meg a magasságot a kívánt méretre */
+  }
+  .Phone{
+  display: block;
+  }
+  .PC{
+  display: none;
+  }
+  .rounded-rectangle {
+    font-size: 100%;
+    margin-top: 100px;
+    margin-left: 17.5%;
+    border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;  /* Lekerekített sarkok */
+    padding: 20px;  /* Szöveg és keret közötti tér */
+    width: 350px;  /* Téglalap szélessége */
+    text-align: center;  /* Szöveg középre igazítása */
+  }
+  .bottom{
+    display: none;
+  }
+  .center-and-left{
+    display: none;
+  }
+  .rounded-rectangle2 {
+    font-size: 80%;
+    margin-top: 6px;
+    margin-left: 17.5%;
+    border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 25px;  /* Lekerekített sarkok */
+    padding: 10px;  /* Szöveg és keret közötti tér */
+    width: 350px;  /* Téglalap szélessége */
+  }
+}
+
+.menu_a{
+  text-align: left;
+}
+
+h2{
+  font-size: 95%;
 }

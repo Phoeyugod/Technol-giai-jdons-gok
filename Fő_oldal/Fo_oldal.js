@@ -41,21 +41,27 @@ currentQuestion.options.forEach(function(option, index) {
 });
 
 function checkAnswer() {
-    var selectedOption = document.querySelector('input[name="option"]:checked').value;
-    if (selectedOption == currentQuestion.answer) {
-        document.getElementById("result").innerHTML = "Helyes válasz!";
+    var selectedOption = document.querySelector('input[name="option"]:checked');
+    if (selectedOption) {
+        if (selectedOption.value == currentQuestion.answer) {
+            document.getElementById("result").innerHTML = "Helyes válasz!";
+        } else {
+            document.getElementById("result").innerHTML = "Sajnos nem helyes a válasz. Próbáld újra!";
+        }
     } else {
-        document.getElementById("result").innerHTML = "Sajnos nem helyes a válasz. Próbáld újra!";
+        document.getElementById("result").innerHTML = "Kérlek, válassz egy válaszlehetőséget!";
     }
 }
 
-  function openNav() {
+function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
   
   /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
   }
