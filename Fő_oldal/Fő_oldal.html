@@ -63,16 +63,25 @@
         <img src="../Fő_oldal/képek/Fő_oldal/robot.png" alt="robot" class="center-and-left">
         <img src="../Fő_oldal/képek/Fő_oldal/setup.png" alt="setup" class="bottom">
     <!-- Interaktív kvíz -->
-    <div class="rounded-rectangle2">
-        <h2>Napi Tech Kvíz (Csináld meg ha értesz hozzá!)</h2>
-        <hr>
-        <p id="question"></p>
-        <hr>
-        <div id="options"></div>
-        <button onclick="checkAnswer()">Ellenőrizd a válaszod</button>
-        <hr>
-        <p id="result"></p>
+    <!-- Trigger/Open The Modal -->
+    <button class="quiz" id="myBtn">Napi Tech Kvíz</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Napi Tech Kvíz (Csináld meg ha értesz hozzá!)</h2>
+            <hr>
+            <p id="question"></p>
+            <hr>
+            <div id="options"></div>
+            <button onclick="checkAnswer()">Ellenőrizd a válaszod</button>
+            <hr>
+            <p id="result"></p>
+        </div>
     </div>
+    
     </article>
     <script src="Fo_oldal.js"></script>
 </body>
