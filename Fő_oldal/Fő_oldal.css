@@ -316,7 +316,11 @@ div{
     display: none;
   }
   .center-and-left{
-    display: none;
+    width: 80%;
+    position: fixed;
+    top: 22%;
+    left: 40%;
+    z-index: -1;
   }
   /* Modal Content/Box */
   .modal-content {
