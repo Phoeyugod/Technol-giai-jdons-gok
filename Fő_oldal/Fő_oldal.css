@@ -77,10 +77,6 @@ h1{
   
 }
 
-#modalbg{
-  background: linear-gradient(#0A3CBD#1772DC);
-}
-
 #input{
   display: flex;
   padding: 5px;
@@ -162,6 +158,7 @@ hr {
   display: block;
   margin-left: 0%;
   margin-top: -18%;
+  margin-top: -7.35%;
   width: 29.5%;
   height: 29.5%;
 }
@@ -172,12 +169,6 @@ hr {
   margin-left: 80%;
   width: 20%;
   height: 115%;
-}
-
-.centered1 {
-  position: absolute;
-  top: 4%;
-  left: 39.5%;
 }
 
 div{
@@ -237,6 +228,8 @@ div{
 .rounded-rectangle {
   margin-top: 100px;
   margin-left: 36%;
+  margin-top: 120px;
+  margin-left: 31.45%;
   border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 25px;  /* Lekerekített sarkok */
@@ -245,15 +238,55 @@ div{
   text-align: center;  /* Szöveg középre igazítása */
 }
 
-.rounded-rectangle2 {
-  margin-top: -415px;
-  margin-left: 34.5%;
-  border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
-  background-color: rgba(0, 0, 0, 1);
-  border-radius: 25px;  /* Lekerekített sarkok */
-  padding: 10px;  /* Szöveg és keret közötti tér */
-  width: 500px;  /* Téglalap szélessége */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
 }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #000000;
+  margin: 20% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.quiz{
+  position: fixed;
+  top: 75%;
+  margin-left: 30%;
+  border-radius: 50%;
+  width: 40%;
+  border: 1px solid #1772DC;
+  background-color: #1772DC;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -286,17 +319,20 @@ div{
     display: none;
   }
   .center-and-left{
-    display: none;
+    width: 80%;
+    position: fixed;
+    top: 22%;
+    left: 40%;
+    z-index: -1;
   }
-  .rounded-rectangle2 {
-    font-size: 80%;
-    margin-top: 6px;
-    margin-left: 17.5%;
-    border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
-    background-color: rgba(0, 0, 0, 1);
-    border-radius: 25px;  /* Lekerekített sarkok */
-    padding: 10px;  /* Szöveg és keret közötti tér */
-    width: 350px;  /* Téglalap szélessége */
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #000000;
+    margin: 20% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 80%; /* Could be more or less, depending on screen size */
   }
 }
 
