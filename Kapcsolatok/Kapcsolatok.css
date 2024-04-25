@@ -328,6 +328,81 @@ h3{
   .sidenav a {font-size: 18px;}
 }
 
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #logo {
+    width: 125px;  /* Változtasd meg a szélességet a kívánt méretre */
+    height: 50px;  /* Változtasd meg a magasságot a kívánt méretre */
+  }
+  .Phone{
+  display: none;
+  }
+  .PC{
+  display: block;
+  }
+  #szoveg{
+    margin-top: 8%;
+    color: white;
+  }
+  h1{
+    font-size: 350%;
+  }
+  h2{
+    margin-top: 9%;
+    font-size: 300%;
+    text-align: center;
+    color: white;
+  }
+  h3{
+    margin-top: 7%;
+    margin-left: 0%;
+    font-size: 275%;
+    text-align: center;
+  }
+  .robot{
+    display: none;
+    margin-top: -40%;
+    margin-left: 80%;
+    width: 17%;
+  }
+  .kep_elhelyezese{
+    margin-top: 18.80%;
+    height: auto;
+    width: 50%;
+  }
+  .centered-and-rounded {
+    margin-top: 8%;
+    margin-left: 12%;
+    border-radius: 50%;
+    width: 75%;
+    font-size: 265%;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 1%;
+    top: 0;
+    font-size: 200%;
+    width: 90%; /* Full width */
+    height: 95%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+    padding-top: 200px;
+  }
+  #robot{
+    z-index: 0;
+    position: fixed;
+    height: auto;
+    width: 40%;
+    left: 26%;
+  }
+  #lejjebb{
+    margin-top: 20%;
+    z-index: 1;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #logo {
     width: 125px;  /* Változtasd meg a szélességet a kívánt méretre */
@@ -348,25 +423,25 @@ h3{
   }
   .centered-and-rounded {
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 11%;
     border-radius: 50%;
     width: 75%;
-    font-size: 265%;
+    font-size: 205%;
   }
   h2{
     margin-top: 9%;
-    font-size: 300%;
+    font-size: 175%;
     text-align: center;
     color: white;
   }
   h3{
     margin-top: 7%;
     margin-left: 0%;
-    font-size: 275%;
+    font-size: 125%;
     text-align: center;
   }
   .kep_elhelyezese{
-    margin-top: 28.6%;
+    margin-top: 20.6%;
     height: auto;
     width: 70%;
   }
@@ -377,7 +452,7 @@ h3{
     left: 1%;
     top: 0;
     width: 90%; /* Full width */
-    height: 95%; /* Full height */
+    height: 105%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0); /* Black w/ opacity */
@@ -387,8 +462,13 @@ h3{
     z-index: 0;
     position: fixed;
     height: auto;
-    width: 65%;
-    left: 13%;
+    width: 48%;
+    left: 22%;
+  }
+  h1{
+    font-size: 300%;
+    color: white;
+    text-align: center;
   }
 }
 
