@@ -58,28 +58,27 @@
             <img id="logo1" src="../Fő_oldal/képek/logo.png" alt="TechWave logo">
             <p>Üdvözöllek a weboldalon Itt megtalálod a legfrissebb technológiai<br>újdonságokat, hogy mindig naprakész lehess. A Kiemelt Technológiai<br> Frissítések részben pedig vizuálisan kiemeljük a legfontosabb híreket,<br> frissítéseket és eseményeket.</p>
         </div>
+        <!-- Interaktív kvíz -->
+        <!-- Trigger/Open The Modal -->
+        <button class="quiz" id="myBtn">Napi Tech Kvíz</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Napi Tech Kvíz (Csináld meg ha értesz hozzá!)</h2>
+                <hr>
+                <p id="question"></p>
+                <hr>
+                <div id="options"></div>
+                <button onclick="checkAnswer()">Ellenőrizd a válaszod</button>
+                <hr>
+                <p id="result"></p>
+            </div>
+        </div>
         <img src="../Fő_oldal/képek/Fő_oldal/robot.png" alt="robot" class="center-and-left">
         <img src="../Fő_oldal/képek/Fő_oldal/setup.png" alt="setup" class="bottom">
-    <!-- Interaktív kvíz -->
-    <!-- Trigger/Open The Modal -->
-    <button class="quiz" id="myBtn">Napi Tech Kvíz</button>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Napi Tech Kvíz (Csináld meg ha értesz hozzá!)</h2>
-            <hr>
-            <p id="question"></p>
-            <hr>
-            <div id="options"></div>
-            <button onclick="checkAnswer()">Ellenőrizd a válaszod</button>
-            <hr>
-            <p id="result"></p>
-        </div>
-    </div>
-    
     </article>
     <script src="Fo_oldal.js"></script>
 </body>

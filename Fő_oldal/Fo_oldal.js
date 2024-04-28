@@ -2,54 +2,70 @@ var questions = [
     {
         question: "Mi az operációs rendszer?",
         options: ["A számítógép hardverét kezelő szoftver", "A számítógép képernyőjének felbontása", "A számítógép energiafogyasztása"],
-        answer: 0
+        answer: "A számítógép hardverét kezelő szoftver"
     },
     {
         question: "Mi a CPU?",
         options: ["A számítógép 'agyát' jelenti, amely végrehajtja az utasításokat, amelyeket a számítógépes programok tartalmaznak.", "A számítógép képernyőjének felbontása", "A számítógép energiafogyasztása"],
-        answer: 0
+        answer: "A számítógép 'agyát' jelenti, amely végrehajtja az utasításokat, amelyeket a számítógépes programok tartalmaznak."
     },
     {
         question: "Mi a RAM?",
         options: ["A számítógép ideiglenes tárolóhelye, amelyben a CPU gyorsan hozzáférhet az adatokhoz.", "A számítógép 'agyát' jelenti, amely végrehajtja az utasításokat, amelyeket a számítógépes programok tartalmaznak.", "A számítógép energiafogyasztása"],
-        answer: 0
+        answer: "A számítógép ideiglenes tárolóhelye, amelyben a CPU gyorsan hozzáférhet az adatokhoz."
     },
     {
         question: "Mi a GPU?",
         options: ["A számítógépben található hardver, amely a képernyőn megjelenő képek rendereléséért felelős.", "A számítógép 'agyát' jelenti, amely végrehajtja az utasításokat, amelyeket a számítógépes programok tartalmaznak.", "A számítógép energiafogyasztása"],
-        answer: 0
+        answer: "A számítógépben található hardver, amely a képernyőn megjelenő képek rendereléséért felelős."
     },
     {
         question: "Mi az SSD?",
         options: ["Az SSD (Solid State Drive) egy típusú adattároló eszköz, amely nincs mozgó alkatrésze, így gyorsabb és megbízhatóbb, mint a hagyományos merevlemezek.", "A számítógép 'agyát' jelenti, amely végrehajtja az utasításokat, amelyeket a számítógépes programok tartalmaznak.", "A számítógép energiafogyasztása"],
-        answer: 0
+        answer: "Az SSD (Solid State Drive) egy típusú adattároló eszköz, amely nincs mozgó alkatrésze, így gyorsabb és megbízhatóbb, mint a hagyományos merevlemezek."
     },
     {
         question: "Mi a cloud computing?",
         options: ["A cloud computing (felhő alapú számítástechnika) lehetővé teszi a felhasználók számára, hogy interneten keresztül hozzáférjenek számítási erőforrásokhoz, mint például szerverek, tárhely és adatbázisok.", "A számítógép 'agyát' jelenti, amely végrehajtja az utasításokat, amelyeket a számítógépes programok tartalmaznak.", "A számítógép energiafogyasztása"],
-        answer: 0
+        answer: "A cloud computing (felhő alapú számítástechnika) lehetővé teszi a felhasználók számára, hogy interneten keresztül hozzáférjenek számítási erőforrásokhoz, mint például szerverek, tárhely és adatbázisok."
     }
 ];
 
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // Amíg még vannak elemek a tömbben
+    while (0 !== currentIndex) {
+
+        // Válasszunk egy véletlen elemet
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // És cseréljük meg a jelenlegi elemet a véletlen elemmel
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
+
 var currentQuestion = questions[Math.floor(Math.random() * questions.length)];
+currentQuestion.options = shuffle(currentQuestion.options);
 document.getElementById("question").innerText = currentQuestion.question;
 
 var optionsContainer = document.getElementById("options");
 currentQuestion.options.forEach(function(option, index) {
-    var radioHtml = '<div><input type="radio" name="option" value="' + index + '">' + option + '</div>';
+    var radioHtml = '<div><input type="radio" name="option" value="' + option + '">' + option + '</div>';
     optionsContainer.innerHTML += radioHtml;
 });
 
 function checkAnswer() {
-    var selectedOption = document.querySelector('input[name="option"]:checked');
-    if (selectedOption) {
-        if (selectedOption.value == currentQuestion.answer) {
-            document.getElementById("result").innerHTML = "Helyes válasz!";
-        } else {
-            document.getElementById("result").innerHTML = "Sajnos nem helyes a válasz. Próbáld újra!";
-        }
+    var selectedOption = document.querySelector('input[name="option"]:checked').value;
+    if (selectedOption == currentQuestion.answer) {
+        document.getElementById("result").innerHTML = "Helyes válasz!";
     } else {
-        document.getElementById("result").innerHTML = "Kérlek, válassz egy válaszlehetőséget!";
+        document.getElementById("result").innerHTML = "Sajnos nem helyes a válasz. Próbáld újra!";
     }
 }
 

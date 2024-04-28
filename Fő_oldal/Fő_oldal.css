@@ -142,14 +142,6 @@ hr {
   
 }
 
-.centered-and-rounded {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-}
-
 #logo1{
   position: relative;
   width: 150px;
@@ -157,18 +149,21 @@ hr {
 
 .bottom{
   display: block;
-  margin-left: 0%;
-  margin-top: -19%;
-  width: 29.5%;
-  height: 29.5%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 29%;
 }
 
 .center-and-left{
   display: block;
-  margin-top: -16%;
-  margin-left: 80%;
+  height: auto;
   width: 20%;
-  height: 115%;
+  position: fixed;
+  right: 0%;
+  bottom: -30%;
+  transform: translate(0%, -50%);
+  z-index: -1;
 }
 
 div{
@@ -220,18 +215,12 @@ div{
   padding: 20px;
 }
 
-.menu_gomb{
-  position: fixed;
-  right: 0%;
-}
-
 .rounded-rectangle {
-  margin-top: 100px;
-  margin-left: 36%;
-  margin-top: 120px;
-  margin-left: 36%;
+  margin-top: 270px;
+  margin-left: 50%;
   border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
   background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
   border-radius: 25px;  /* Lekerekített sarkok */
   padding: 20px;  /* Szöveg és keret közötti tér */
   width: 500px;  /* Téglalap szélessége */
@@ -281,7 +270,8 @@ div{
   color: black;
   position: fixed;
   top: 75%;
-  margin-left: 30%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   width: 40%;
   border: 1px solid #1772DC;
@@ -315,10 +305,11 @@ div{
   }
   .rounded-rectangle {
     font-size: 100%;
-    margin-top: 100px;
-    margin-left: 30%;
+    margin-top: 300px;
+    margin-left: 50%;
     border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
     background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
     border-radius: 25px;  /* Lekerekített sarkok */
     padding: 20px;  /* Szöveg és keret közötti tér */
     width: 400px;  /* Téglalap szélessége */
@@ -326,14 +317,18 @@ div{
   }
   .bottom{
     display: block;
-    margin-top: -28.25%;
-    margin-left: 0%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 35%;
   }
   .center-and-left{
-    height: 45%;
+    height: auto;
     width: 30%;
-    margin-top: -2%;
-    margin-left: 70%;
+    position: fixed;
+    right: 0%;
+    bottom: 1%;
+    transform: translate(0%, -50%);
     z-index: -1;
   }
   /* Modal Content/Box */
@@ -359,12 +354,13 @@ div{
   display: none;
   }
   .rounded-rectangle {
-    font-size: 100%;
-    margin-top: 100px;
-    margin-left: 17.5%;
-    border: 2px solid rgba(0, 0, 0, 0.5);  /* Téglalap kerete */
+    font-size: 120%;
+    margin-top: 300px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(0, 0, 0, 0);  /* Téglalap kerete */
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;  /* Lekerekített sarkok */
+    border-radius: 105px;  /* Lekerekített sarkok */
     padding: 20px;  /* Szöveg és keret közötti tér */
     width: 350px;  /* Téglalap szélessége */
     text-align: center;  /* Szöveg középre igazítása */
@@ -385,9 +381,20 @@ div{
     background-color: #000000;
     margin: 20% auto; /* 15% from the top and centered */
     padding: 20px;
+    transform: translate(-50%, -50%);
     border-radius: 25px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .quiz{
+    color: black;
+    margin-top: 0%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 40%;
+    border: 1px solid #1772DC;
+    background-color: #1772DC;
   }
 }
 

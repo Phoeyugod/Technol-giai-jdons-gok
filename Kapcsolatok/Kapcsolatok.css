@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
-html{
-  height: 100%;
-}
-
-body{
-  margin: 0;
-  background: linear-gradient( #0F498C, #512222)
-
-}
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -43,7 +33,6 @@ body{
   font-size: 35px;
   font-weight: bold;
 }
-
 
 .navok{
   background: linear-gradient( #512222,#0F498C);
@@ -272,15 +261,20 @@ h3{
 }
 
 .kep_elhelyezese{
-  margin-top: -1.7%;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
   height: auto;
   width: 30%;
+  transform: translate(0%, 0%);
 }
 
 .robot{
-  margin-top: -40%;
-  margin-left: 80%;
   width: 17%;
+  position: absolute;
+  right: 0%;
+  bottom: 20%;
+  transform: translate(0%, -20%);
 }
 
 /* The side navigation menu */
