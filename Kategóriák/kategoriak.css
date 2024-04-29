@@ -1,36 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+.navok{
+  background: linear-gradient( #512222,#0F498C);
+}
 
 html{
   height: 100%;
 }
 
 body{
+  font-size: 18px;
   margin: 0;
   background: linear-gradient( #0F498C, #512222)
-}
-
-/* The Close Button */
-.close {
-  /* Position it in the top right corner outside of the modal */
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-/* Close button on hover */
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
 }
 
 @-webkit-keyframes animatezoom {
@@ -43,19 +23,26 @@ body{
   to {transform: scale(1)}
 }
 
+.PC{
+  display: block;
+}
+
+.Phone{
+  display: none;
+}
+
 #logo {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -10;
+  width: 125px;  /* Változtasd meg a szélességet a kívánt méretre */
+  height: 50px;  /* Változtasd meg a magasságot a kívánt méretre */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;  /* A tételek középre igazítása függőlegesen */
 }
 
 h1{
   color: white;
-}
-
-nav{
-  background: linear-gradient( #512222,#0F498C)
 }
 
 #brandnev{
@@ -114,6 +101,7 @@ nav img{
   justify-content: center;
   align-items: center;
   height: 100vh; /* Vízszintes középre igazítás */
+  padding: 16px;
 }
 
 .row {
@@ -147,20 +135,17 @@ button:hover {
   width: 50%;
 }
 
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
+
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
+  position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  width: 200%; /* Full width */
-  height: 130%; /* Full height */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   padding-top: 50px;
 }
@@ -169,30 +154,13 @@ button:hover {
 .modal-content {
   background: linear-gradient( #0F498C, #512222);
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+  width: 60%; /* Could be more or less, depending on screen size */
+  height: 80%;
+  animation: modal-show 0.3s ease-out;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
@@ -208,7 +176,6 @@ button:hover {
   background-color: white;
   margin: 6px 0;
   text-align:right;
-  
 }
 
 #foszoveg{
@@ -218,117 +185,120 @@ button:hover {
   position: absolute;
 }
 
-#demo{
-  background: linear-gradient(#0A3CBD#1772DC);
+div{
+  color: #FFFFFF;
 }
 
-.centered-and-rounded {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
+p{
+  text-align: center;
+  font-size: 90%;
 }
 
-#logo1{
-  position: fixed;
-  z-index: 1;
-  width: 20%;
-  top: 2%;
-  right: 46%;
-}
-
-.centered {
-  position: absolute;
-  top: 5%;
-  left: 42%;
-}
-
-.bottom{
-  position: fixed;
-  bottom: -166%;
-  left: -75%;
-}
-
-.center-and-left{
-  position: fixed;
-  left: 130%;
-  bottom: -85%;
-  width: 45%;
-  height: 170%;
-}
-
-#logo2{
-  position: absolute;
-  z-index: 1;
-  width: 35%;
-  top: 5%;
-  right: 40%;
-}
-
-#jumpbotron1{
-  font-size: 1em;
-  color: white;
-  position: absolute;
-  z-index: 2;
-}
-
-.centered1 {
-  position: absolute;
-  top: 4%;
-  left: 39.5%;
-}
-
-#logo4{
-  position: absolute;
-  z-index: 1;
+.box img {
+  margin-left: -2.5%;
+  flex: 1 0 auto;
+  width: 105%;
+  height: auto;
+  border-radius: 70px 70px 0px 0px;
 }
 
 div{
   color: #FFFFFF;
 }
 
-#Icon{
-  left: 100%;
-  top: 100%;
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background: linear-gradient( #512222,#0F498C 7.5%,#1772DC); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-#lefele{
-    position: absolute;
-    top: 20%;
-    left: 5%;
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-p{
-  text-align: center;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-#fel{
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
   position: absolute;
-  top: 92%;
-  right: 1%;
+  z-index: -1;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-#logo4_1{
-  position: absolute;
-  z-index: 0;
-  width: 20%;
-  top: 0.75%;
-  left: 0%;
+.box{
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 70px;
 }
 
-.container2 {
-  display: flex;
-  flex-wrap: wrap;
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
-.container img {
-  flex: 1 0 auto;
-  width: 100%;
-  height: auto;
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #logo {
+    width: 125px;  /* Változtasd meg a szélességet a kívánt méretre */
+    height: 50px;  /* Változtasd meg a magasságot a kívánt méretre */
+  }
+  .Phone{
+  display: none;
+  }
+  .PC{
+  display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 125px;  /* Változtasd meg a szélességet a kívánt méretre */
+    height: 50px;  /* Változtasd meg a magasságot a kívánt méretre */
+  }
+  .Phone{
+  display: block;
+  }
+  .PC{
+  display: none;
+  }
+  
 }
 
 h2{
-  position: relative;
-  left: 30%;
+  font-size: 95%;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+@keyframes modal-show {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
